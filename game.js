@@ -200,7 +200,7 @@
   }
 
   // ---- 今日の5問・上級（日本時間の日付から。だれでも同じ）----
-  const DAY = 864e5, EPOCH = "2026-11-08";
+  const DAY = 864e5, EPOCH = "2026-11-07";
   const dayMs = (k) => Date.parse(k + "T00:00:00Z");
   const keyOf = (ms) => new Date(ms).toISOString().slice(0, 10);
   const dayIdx = (k) => Math.max(0, Math.round((dayMs(k) - dayMs(EPOCH)) / DAY));
